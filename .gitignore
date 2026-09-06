@@ -1,0 +1,30 @@
+# Unreal Engine generated / build artifacts
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+.vs/
+*.VC.db
+*.opensdf
+*.opendb
+*.sdf
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+
+# Visual Studio config
+.vsconfig
+
+# Plugin build artifacts
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Local-only editor prefs
+Config/*Editor*User*.ini
