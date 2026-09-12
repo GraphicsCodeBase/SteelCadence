@@ -52,7 +52,7 @@ protected:
 public:
 
 	/** Constructor */
-	ASteelCadenceCharacter();	
+	ASteelCadenceCharacter(const FObjectInitializer& ObjectInitializer);
 
 protected:
 

@@ -17,6 +17,10 @@ Build/
 # Visual Studio config
 .vsconfig
 
+# JetBrains Rider
+.idea/
+*.sln.iml
+
 # Plugin build artifacts
 Plugins/**/Binaries/
 Plugins/**/Intermediate/

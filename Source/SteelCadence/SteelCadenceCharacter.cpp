@@ -1,6 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "SteelCadenceCharacter.h"
+#include "SteelCadenceCharacterMovement.h"
 #include "Engine/LocalPlayer.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -12,7 +13,9 @@
 #include "InputActionValue.h"
 #include "SteelCadence.h"
 
-ASteelCadenceCharacter::ASteelCadenceCharacter()
+ASteelCadenceCharacter::ASteelCadenceCharacter(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer.SetDefaultSubobjectClass<USteelCadenceCharacterMovement>(
+		ACharacter::CharacterMovementComponentName))
 {
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
